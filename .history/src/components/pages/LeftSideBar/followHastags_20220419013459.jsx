@@ -1,0 +1,20 @@
+import React from "react";
+
+export default function followHastags() {
+  const text = "#cattosnssssgam2e";
+  const tags = ["videos", "gaming", "chating", "tiktokvideowhach", "hotvideo"];
+  console.log(text.length);
+  return (
+    <div className="w-[278px] bg-white  rounded-md grid grid-cols-3 p-4">
+      {tags.map((tag) => (
+        <span
+          className={`bg-gray-200 rounded-sm p-1 m-2  ${
+            tag.length > 10 && tag.length < 18 && "col-span-2"
+          }`}
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
